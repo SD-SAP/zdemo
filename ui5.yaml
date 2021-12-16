@@ -1,0 +1,17 @@
+specVersion: '2.6'
+metadata:
+  name: zdemo
+type: application
+framework:
+  name: SAPUI5
+  version: "1.96.1"
+server:
+  customMiddleware:
+  - name: fiori-tools-proxy
+    afterMiddleware: compression
+    configuration:
+      ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+      backend:
+      - path: /sap
+        url: http://R3TESTHR.sdas.cz:8000
+        client: '001'

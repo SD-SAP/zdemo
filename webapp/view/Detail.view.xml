@@ -1,0 +1,34 @@
+<mvc:View
+    controllerName="sap.ui.demo.zdemo.controller.Detail"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Page
+        title="{i18n>panel4HeaderText}"
+    	showNavButton="true"
+		navButtonPress=".onNavBack">
+            <form:SimpleForm
+                editable="true"
+                layout="ColumnLayout">
+                    <Label text="{i18n>EVIDCISLO}"/>
+                    <Input value="{vozidla>EVIDCISLO}"/>
+
+                    <Label text="{i18n>SPZ}"/>
+                    <Input value="{vozidla>SPZ}"/>
+
+                    <Label text="{i18n>naklStredisko}"/>
+                    <Input value="{vozidla>KOSTL}"/>
+
+                    <Label text="{i18n>AUFNR}"/>
+                    <Input value="{vozidla>AUFNR}"/>
+
+                    <Label text="{i18n>OZNACENI}"/>
+                    <Input value="{vozidla>OZNACENI}"/>
+
+                    <Label text="{i18n>OSUZIV}"/>
+                    <CheckBox selected="{vozidla>OSUZIV}"/>
+            </form:SimpleForm>
+    </Page>
+</mvc:View>
